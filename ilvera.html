@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ілвера</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html" class="nav-link">🏠 Назад</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="background">
+      <h1 class="title">Ілвера</h1>
+      
+      <section id="scene-1" class="scene active">
+        <div class="world-box">
+          <h2>Сцена 1: Вхід до великого лісу</h2>
+          <p>Ти стоїш перед густим лісом. Вітер шепоче стародавні пісні...</p>
+          <button class="magic-button" onclick="switchScene(2)">Увійти в ліс</button>
+          <button class="magic-button" onclick="switchScene(3)">Звернути на стежку</button>
+        </div>
+      </section>
+
+      <section id="scene-2" class="scene">
+        <div class="world-box">
+          <h2>Сцена 2: Глибина лісу</h2>
+          <p>Усередині ти бачиш дивне світло між деревами. Щось рухається...</p>
+          <button class="magic-button" onclick="switchScene(1)">⬅ Назад</button>
+        </div>
+      </section>
+
+      <section id="scene-3" class="scene">
+        <div class="world-box">
+          <h2>Сцена 3: Таємна стежка</h2>
+          <p>Стежка приводить тебе до старого храму, порослого мохом...</p>
+          <button class="magic-button" onclick="switchScene(1)">⬅ Назад</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    function switchScene(id) {
+      document.querySelectorAll('.scene').forEach(s => s.classList.remove('active'));
+      document.getElementById(`scene-${id}`).classList.add('active');
+    }
+  </script>
+</body>
+</html>

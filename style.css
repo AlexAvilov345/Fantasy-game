@@ -138,15 +138,21 @@ body, html {
   background: linear-gradient(145deg, #3cbf4d, #49e36a);
   box-shadow: 0 0 20px #76ff7a, 0 0 40px #3cbf4d;
 }
-
-.button-norvald {
-  background: linear-gradient(145deg, #a8cfff, #d0e7ff);
-  border-color: #e0f7ff;
-  box-shadow: 0 0 10px #ffffff;
-  color: #000000;
+.input {
+  font-size: 16px;
+  padding: 12px 24px; 
+  border: none;
+  outline: none;
+  border-radius: 12px; 
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  line-height: 1.5; 
 }
 
-.button-norvald:hover {
-  background: linear-gradient(145deg, #d0e7ff, #ffffff);
-  box-shadow: 0 0 20px #ffffff, 0 0 40px #a8cfff;
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696;
 }
+

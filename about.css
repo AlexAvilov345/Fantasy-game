@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: #f0f0f0;
+      height: 100%;
+    }
+    .background {
+  background: url(images/backiee-290909.jpg) no-repeat center / cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 60px;
+}
+
+    .worlds-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(20, 20, 30, 0.8);
+      border-radius: 20px;
+      box-shadow: 0 0 20px #000;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 40px;
+      color: #ffd700;
+    }
+
+    .world-block {
+      background-color: rgba(40, 40, 60, 0.9);
+      border-left: 6px solid #7ec4ff;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .world-block:hover {
+      background-color: rgba(50, 50, 70, 0.95);
+      border-left-color: #ff7e5f;
+    }
+
+    .world-block h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #7ec4ff;
+    }
+
+    .world-block p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #dddddd;
+    }
+    .header {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  z-index: 10;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #FF00A1;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+} 
